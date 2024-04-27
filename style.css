@@ -1,0 +1,57 @@
+body {
+  background-color: #6B7280;
+  display: flex;
+  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+    gap: 200px;
+    position: relative;
+}
+
+/* Definiere den Stil der Tabelle */
+
+table {
+  border-collapse: collapse; /* Vereinige die Zellen ohne Trennlinie */
+}
+
+/* Definiere den Stil der Zellen */
+td {
+  width: 260px;
+  height: 260px;
+  text-align: center;
+  font-size: 2em;
+  border: 5px solid white; /* Innere Trennlinie */
+}
+
+td:hover {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255, 0.3); 
+}
+
+/* Definiere den Stil der äußeren Zellen */
+td:first-child {
+  border-left: none; /* Entferne den linken äußeren Rand */
+}
+
+td:last-child {
+  border-right: none; /* Entferne den rechten äußeren Rand */
+}
+
+tr:first-child td {
+  border-top: none; /* Entferne den oberen äußeren Rand */
+}
+
+tr:last-child td {
+  border-bottom: none; /* Entferne den unteren äußeren Rand */
+}
+
+.winner-line {
+  position: absolute;
+  width: 780px;
+  height: 3px;
+  background-color: white;
+  transform: translateY(-50%);
+}
